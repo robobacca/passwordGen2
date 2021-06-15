@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <head>
+        <title>Password Generator</title>
+    </head>
+    <body>
+        <h1 style="width: 100%;">Password Generator</h1>
+        <form>
+            <div class="checkboxcontainer">
+                <input id="sel1" type="checkbox" style="margin-top: 3.7vh;margin-right: 1vw;" name="sel1" value="cLetters">
+                <label for="sel1"><h2>Capital Letters</h2></label>
+            </div>
+            <div class="checkboxcontainer">
+                <input id="sel2" type="checkbox" style="margin-top: 3.7vh;margin-right: 1vw;" name="sel2" value="num">
+                <label for="sel2"><h2>Numbers</h2></label>
+            </div>
+            <div class="checkboxcontainer">
+                <input id="sel3" type="checkbox" style="margin-top: 3.7vh;margin-right: 1vw;" name="sel3" value="specChar">
+                <label for="sel3"><h2>Special Characters</h2></label>
+            </div>
+            <div class="checkboxcontainer">
+                <label for="sel4"><h2 style="margin: 2vh;">Number of characters (Must be between 8 and 12)</h2></label>
+                <input type="number" style="width: 10vw; background-color: black; color: white; font-family: 'Montserrat', sans-serif; font-size: 20px; border-width: 1px; border-color: white; border-style: solid;" name="sel4" class="sel4">
+            </div>
+            <button type="reset" class="generateButton">Generate</button>
+        </form>
+        <div class="passbox">
+            <h3 style="width: 45%; text-align: right; padding-right: 2%;">Password: </h3>
+            <h3 class="password" style="width: 45%; text-align: left; padding-left: 2%;">-</h3>
+        </div>
+        <div class="desc">
+            <h3>Why A Password Generator?</h3>
+            <p>
+                Passwords are essential to our modern society. Passwords are the key to all of our personal
+                information,. With just a combination of characters, we secure our private information away from strangers
+                on the Internet.
+            </p>
+            <p>
+                Hence, we need a secure password to properly protect our data, and that of the ones we love, and a random
+                password is the most secure password as it has no link to anyof your personal information, such as your birthday or name.
+                Hence, use this password generator to ensure your accounts will never be hacked, and to protec yourse;f form
+                the malicious hackers on the internet.
+            </p>
+            <p>Note: Passwords generated here are not stored in any files or databases.</p>
+            <br>
+            <h3>How do I use it?</h3>
+            <p>
+                Firstly, you select if certain groups of characters, capitols, number and special characters,
+                should be contained in the password. This is done by checking the corresponding checkboxes to add it in.
+            </p>
+            <p>
+                Next, enter in the desired length of your password. The password must be between 8 and 12 characters so it does
+                not become overcomplicated or oversimplified.
+            </p>
+            <p>
+                Finnaly, press the generate button and the password will be generated! Be sure to copy your new passcode
+                and note it down so you won't forget.
+            </p>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="script.js" type="text/javascript"></script>
+    </body>
+</html>
